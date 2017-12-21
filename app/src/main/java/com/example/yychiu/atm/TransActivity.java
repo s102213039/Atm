@@ -51,7 +51,6 @@ public class TransActivity extends AppCompatActivity {
             public void onResponse(Call call, Response response) throws IOException {
                 String json = response.body().string();
                 Log.d("OKHTTP",json);
-                //parseJSON(json);
                 parseGson(json);
             }
         });
